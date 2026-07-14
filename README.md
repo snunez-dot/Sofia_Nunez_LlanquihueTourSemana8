@@ -1,29 +1,27 @@
 # Sofia_Nunez_LlanquihueTourSemana8
 Llanquihue Tour App - Semana 8
+Breve descripción:
 
-Proyecto correspondiente a la semana 8 de Llanquihue Tour. El sistema permite registrar y administrar distintas entidades de la agencia mediante una estructura basada en herencia, interfaces y polimorfismo. Además, incorpora una interfaz gráfica para facilitar el ingreso y la visualización de los registros creados.
+Proyecto correspondiente a la semana 8 de Llanquihue Tour. El sistema permite registrar y administrar distintas entidades de la agencia mediante una estructura basada en herencia, interfaces y polimorfismo. Se implementó una interfaz gráfica utilizando JOptionPane, permitiendo ingresar nuevos registros y visualizar la información almacenada de forma sencilla.
 
 Clases e interfaces:
 Interfaz
-Registro: define el método mostrarResumen(), implementado por todas las entidades registrables.
+Registro: define el método mostrarResumen() que implementan todas las entidades registrables.
 
-Model
-
-RecursosAgencia (clase abstracta).
-GuiaTuristico.
-Vehiculo.
-ColaboradorExterno.
+Model:
+RecursosAgencia: clase abstracta base del sistema.
+GuiaTuristico
+Vehiculo
+ColaboradorExterno
 
 Data:
-GestorEntidades: administra una colección ArrayList<Registro>, registra entidades y utiliza instanceof para identificar el tipo de cada objeto.
+GestorEntidades: administra una colección ArrayList<Registro>, registra nuevas entidades y utiliza instanceof para identificar el tipo de cada objeto.
 
 UI:
-Main: ejecuta la aplicación.
-Interfaz gráfica desarrollada para registrar y visualizar entidades.
+Main: inicia el sistema y ejecuta la interfaz gráfica desarrollada con JOptionPane.
 
 Instrucciones de ejecución
-Clonar o descargar el repositorio.
-Abrir el proyecto como proyecto Maven en NetBeans.
+Clonar o descargar el proyecto.
+Abrir el proyecto como proyecto Maven.
 Ejecutar la clase Main.java ubicada en el paquete ui.
-Utilizar la interfaz gráfica para registrar entidades y visualizar los registros creados.
-
+Utilizar el menú de la interfaz gráfica para registrar guías turísticos o vehículos y visualizar los registros creados.
